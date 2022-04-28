@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>CloudResource</title>
+
+<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<center><div class="title">网盘管理系统</div></center>
+<div class="materialContainer">
+<form action="LoginServlet" method="post">
+	<div class="box">
+		<div class="title">登录</div>
+		<div class="input">
+			<label for="name">账号/学号</label>
+			<input type="text" name="name" id="name">
+			<span class="spin"></span>
+		</div>
+		<div class="input">
+			<label for="pass">密码</label>
+			<input type="password" name="pass" id="pass">
+			<span class="spin"></span>
+		</div>
+		<div class="input">
+		身份选择：
+			<select name="iden">
+   			 	<option value="student">学生</option>
+    			<option value="teacher">教师</option>
+			</select>
+		</div>
+		<div class="button submit">
+			<button>
+				<span>
+				<input type=submit value="login" >
+				</span>
+				<i class="fa fa-check"></i>
+			</button>
+		</div>		
+	</div>
+</form>
+	<div class="overbox">
+		<div class="material-button alt-2">
+			<span class="shape"></span>
+		</div>
+
+
+		
+
+		<form action="AdminLoginServlet" method="post">
+		<div class="title">管理员登录</div>
+		<div class="input">
+			<label for="regname">AdminID</label>
+			<input type="text" name="adminid" id="regname">
+			<span class="spin"></span>
+		</div>
+		<div class="input">
+			<label for="regpass">ADMINPASSWORD</label>
+			<input type="password" name="adminpwd" id="regpass">
+			<span class="spin"></span>
+		<div class="button">
+			<input type="submit" name="register" value="登录">
+				
+			
+		</div>
+		</div>
+		</form>
+	</div>
+
+
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>
